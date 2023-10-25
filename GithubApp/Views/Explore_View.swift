@@ -57,8 +57,10 @@ struct Explore_View: View {
     }
 }
 
-#Preview {
-    Explore_View()
+struct Explore_View_previews: PreviewProvider{
+    static var previews: some View {
+        Explore_View()
+    }
 }
 
 

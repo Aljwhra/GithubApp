@@ -18,12 +18,21 @@ struct Tab_View: View {
             Explore_View()
                 .tabItem {
                     Image(systemName: "circle.hexagongrid.fill")
-                    Text("Home")
+                    Text("Explore")
                 }
+            
+            ProfileView()
+                .tabItem {
+                   Image(systemName: "person.circle")
+                    Text("Profile")
+                }
+            
         }
     }
 }
 
-#Preview {
-    Tab_View()
+struct Tab_View_previews: PreviewProvider{
+    static var previews: some View {
+        Tab_View()
+    }
 }

@@ -21,12 +21,13 @@ struct MyList: View {
                     
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 40,height: 40)
+                    .frame(width: 30,height: 30)
                     .foregroundColor(color)
                    
                 Text(title)
                     .foregroundColor(.white)
                 Spacer()
+                
                 Button(action: {}, label: {
                     Image(systemName: "chevron.right")
                         .foregroundColor(.gray)
@@ -40,6 +41,13 @@ struct MyList: View {
     }
 }
 
-#Preview {
-    MyList(image: Image(systemName: "bubble"), title: "fjh", color: .black)
+//#Preview {
+//    MyList(image: Image(systemName: "bubble"), title: "fjh", color: .black)
+//}
+
+
+struct MyList_previews: PreviewProvider{
+    static var previews: some View {
+        MyList(image: Image(systemName: "bubble"), title: "fjh", color: .black)
+    }
 }

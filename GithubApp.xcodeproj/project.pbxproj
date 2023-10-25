@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		D21BB0212AE86D3800351B2E /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BB0202AE86D3800351B2E /* MyList.swift */; };
 		D21BB0272AE87CE600351B2E /* Explore_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BB0262AE87CE600351B2E /* Explore_View.swift */; };
 		D21BB02B2AE88DCC00351B2E /* Tab_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BB02A2AE88DCC00351B2E /* Tab_View.swift */; };
+		D28A68772AE900F0007E603C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A68762AE900F0007E603C /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D21BB0202AE86D3800351B2E /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 		D21BB0262AE87CE600351B2E /* Explore_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore_View.swift; sourceTree = "<group>"; };
 		D21BB02A2AE88DCC00351B2E /* Tab_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab_View.swift; sourceTree = "<group>"; };
+		D28A68762AE900F0007E603C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,11 @@
 		D21BB01D2AE7D2C000351B2E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D21BB02A2AE88DCC00351B2E /* Tab_View.swift */,
 				D21BB01E2AE7D36F00351B2E /* Home_View.swift */,
 				D21BB0202AE86D3800351B2E /* MyList.swift */,
 				D21BB0262AE87CE600351B2E /* Explore_View.swift */,
-				D21BB02A2AE88DCC00351B2E /* Tab_View.swift */,
+				D28A68762AE900F0007E603C /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,7 +126,7 @@
 				};
 			};
 			buildConfigurationList = D21BB0072AE7A9DD00351B2E /* Build configuration list for PBXProject "GithubApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -162,6 +165,7 @@
 				D21BB0272AE87CE600351B2E /* Explore_View.swift in Sources */,
 				D21BB01F2AE7D36F00351B2E /* Home_View.swift in Sources */,
 				D21BB02B2AE88DCC00351B2E /* Tab_View.swift in Sources */,
+				D28A68772AE900F0007E603C /* ProfileView.swift in Sources */,
 				D21BB0102AE7A9DD00351B2E /* GithubAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

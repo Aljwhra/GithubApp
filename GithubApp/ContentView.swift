@@ -12,11 +12,15 @@ struct ContentView: View {
         
         ScrollView{
             RoundedRectangle(cornerRadius: 8)
-                .frame(height: 8*20)
+                .frame(height: 8*20) 
         }
     }
 }
 
-#Preview {
-    ContentView()
+
+
+struct  ContentView_previews: PreviewProvider{
+    static var previews: some View {
+        ContentView()
+    }
 }

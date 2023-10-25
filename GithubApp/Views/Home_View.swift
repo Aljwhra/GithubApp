@@ -61,15 +61,17 @@ struct Home_View: View {
                 }
                 .searchable(text: $searchBar , prompt: "search" )
                 
-            } // End_NavigationStack
-        }
+            }
+        } // End_NavigationStack
     }
 }
 
-#Preview {
-    Home_View()
-}
 
+struct Home_View_previews: PreviewProvider{
+    static var previews: some View {
+        Home_View()
+    }
+}
 
 
 struct MyWorkView: View {
@@ -155,27 +157,38 @@ struct ShortcutsView: View {
                 
                
                     Image(systemName: "smallcircle.filled.circle")
-                        .resizable()
+                    
                         .scaledToFit()
-                        .frame(width: 30,height: 30)
+                        .font(.title)
+                        .frame(width: 40,height: 40)
                         .foregroundColor(.green)
-//                Circle()
-//                    .frame(width: 20,height: 20)
+                        .background(.green.opacity(0.3))
+                        .cornerRadius(40)
+                       
                     Image(systemName: "slider.vertical.3")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.blue)
+                    .scaledToFit()
+                    .font(.title2)
+                    .frame(width: 40,height: 40)
+                    .foregroundColor(.blue)
+                    .background(.blue.opacity(0.3))
+                    .cornerRadius(40)
+                
                     Image(systemName: "bubble")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.purple)
+                    .scaledToFit()
+                    .font(.title2)
+                    .frame(width: 40,height: 40)
+                    .foregroundColor(.purple)
+                    .background(.purple.opacity(0.3))
+                    .cornerRadius(40)
+                
                     Image(systemName: "building.2")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.orange)
+                    .scaledToFit()
+                    .font(.title2)
+                    .frame(width: 40,height: 40)
+                    .foregroundColor(.orange)
+                    .background(.orange.opacity(0.3))
+                    .cornerRadius(40)
+                
                     Image(systemName: "person.2")
                         .resizable()
                         .scaledToFit()
