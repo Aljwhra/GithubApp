@@ -52,6 +52,8 @@ struct Home_View: View {
                 .padding()
                 .background(.black)
                 .navigationTitle("Home")
+              //  .navigationBarTitleDisplayMode(.inline)
+                
                 .toolbar{
                     ToolbarItem(placement: .navigationBarTrailing){
                         Button(action: {}){
@@ -190,10 +192,13 @@ struct ShortcutsView: View {
                     .cornerRadius(40)
                 
                     Image(systemName: "person.2")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30,height: 30)
-                        .foregroundColor(.red)
+                    .scaledToFit()
+                    .font(.title2)
+                    .frame(width: 40,height: 40)
+                    .foregroundColor(.red)
+                    .background(.red.opacity(0.3))
+                    .cornerRadius(40)
+                       
                 }
         
             
